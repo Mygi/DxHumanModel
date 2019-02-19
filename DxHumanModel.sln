@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DxHumanModel", "DxHumanModel\DxHumanModel.csproj", "{EFF3FD41-1A02-4D36-912A-85C1B3F5F8C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDxHuman", "TestDxHuman\TestDxHuman.csproj", "{32D4E6B2-3323-49E0-A284-0B1878254B83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFF3FD41-1A02-4D36-912A-85C1B3F5F8C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFF3FD41-1A02-4D36-912A-85C1B3F5F8C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFF3FD41-1A02-4D36-912A-85C1B3F5F8C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFF3FD41-1A02-4D36-912A-85C1B3F5F8C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32D4E6B2-3323-49E0-A284-0B1878254B83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32D4E6B2-3323-49E0-A284-0B1878254B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32D4E6B2-3323-49E0-A284-0B1878254B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32D4E6B2-3323-49E0-A284-0B1878254B83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

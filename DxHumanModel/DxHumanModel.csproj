@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StackExchange.Redis" Version="2.0.519" />
+    <PackageReference Include="StackExchange.Redis.Extender" Version="1.0.5" />
+    <PackageReference Include="StackExchange.Redis.DataTypes" Version="2.0.0" />
+    <PackageReference Include="StackExchange.Redis.Extensions.Core" Version="4.0.5" />
+    <PackageReference Include="StackExchange.Redis.Extensions.Newtonsoft" Version="4.0.5" />
+    <PackageReference Include="StackExchange.Redis.Extensions.Protobuf" Version="4.0.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Molecules\" />
+    <Folder Include="Inputs\" />
+    <Folder Include="Sumps\" />
+    <Folder Include="Core\" />
+    <Folder Include="Transporters\" />
+    <Folder Include="Classifiers\" />
+    <Folder Include="Presentation\" />
+  </ItemGroup>
+</Project>
