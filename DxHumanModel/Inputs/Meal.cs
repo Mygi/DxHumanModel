@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using DxHumanModel.Classifiers;
+using DxHumanModel.Topology;
 using DxHumanModel.Transporters;
 
 namespace DxHumanModel.Inputs
 {
-    public class Meal : Ship<int>
+    public class Meal : Ship
     {
-        private readonly ProbabilityMap H2O = new ProbabilityMap((double)0.2, (double)0.5);
-        private readonly ProbabilityMap Na = new ProbabilityMap((double)0.005, (double)0.005);
-        private readonly ProbabilityMap K = new ProbabilityMap((double)0.002, (double)0.001);
-        private readonly ProbabilityMap Other = new ProbabilityMap((double)0.2, (double)0.4);
+        private readonly ProbabilityMap H2O = new ProbabilityMap((decimal)0.2, (decimal)0.5);
+        private readonly ProbabilityMap Na = new ProbabilityMap((decimal)0.005, (decimal)0.005);
+        private readonly ProbabilityMap K = new ProbabilityMap((decimal)0.002, (decimal)0.001);
+        private readonly ProbabilityMap Other = new ProbabilityMap((decimal)0.2, (decimal)0.4);
 
         private Dictionary<string, ProbabilityMap> moleculeLikelihood;
 
@@ -32,22 +32,22 @@ namespace DxHumanModel.Inputs
         {
             return this.moleculeLikelihood;
         }
-        private Volume<int> SetVolume()
+        private Volume SetVolume()
         {
-            Coordinate<int> resolution = new Coordinate<int>(1, 1, 1);
+            Coordinate resolution = new Coordinate(1m, 1m, 1m);
             Random rand = new Random();
-            Coordinate<int> size = new Coordinate<int>(rand.Next(5, 10), rand.Next(5, 10), rand.Next(5, 10));
+            Coordinate size = new Coordinate(Convert.ToDecimal(rand.Next(5, 10)), Convert.ToDecimal(rand.Next(5, 10)), Convert.ToDecimal(rand.Next(5, 10)));
 
-            Volume<int> containerVolume = new Volume<int>(resolution, size);
+            Volume containerVolume = new Volume(resolution, size);
             Console.Write("Size x: {0}", containerVolume.Size.X);
 
             return containerVolume;
         }
-        public Dictionary<string, double> Fill()
+        public Dictionary<string, decimal> Fill()
         {
             return this.StandardFill(this.moleculeLikelihood);
         }
-        public Volume<int> GetVolume()
+        public Volume GetVolume()
         {
             return this._shipSize;
         }

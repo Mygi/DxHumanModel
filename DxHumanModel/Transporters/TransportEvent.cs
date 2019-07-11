@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using DxHumanModel.Classifiers;
+using DxHumanModel.Topology;
 using ProtoBuf;
 
 namespace DxHumanModel.Transporters
@@ -9,10 +9,10 @@ namespace DxHumanModel.Transporters
     public class TransportEvent
     {
         [ProtoMember(1)]
-        public Dictionary<string, double> Concentrations { get; set;  }
+        public Dictionary<string, decimal> Concentrations { get; set;  }
 
         [ProtoMember(2)]
-        public Volume<int> volume;
+        public Volume volume;
 
         [ProtoMember(3)]
         public int messageIcrement;

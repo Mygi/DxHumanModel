@@ -6,12 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="StackExchange.Redis" Version="2.0.519" />
-    <PackageReference Include="StackExchange.Redis.Extender" Version="1.0.5" />
+    <PackageReference Include="StackExchange.Redis" Version="2.0.601" />
     <PackageReference Include="StackExchange.Redis.DataTypes" Version="2.0.0" />
-    <PackageReference Include="StackExchange.Redis.Extensions.Core" Version="4.0.5" />
-    <PackageReference Include="StackExchange.Redis.Extensions.Newtonsoft" Version="4.0.5" />
-    <PackageReference Include="StackExchange.Redis.Extensions.Protobuf" Version="4.0.5" />
+    <PackageReference Include="StackExchange.Redis.Extensions.Core" Version="5.0.3" />
+    <PackageReference Include="StackExchange.Redis.Extensions.Newtonsoft" Version="5.0.3" />
+    <PackageReference Include="StackExchange.Redis.Extensions.Protobuf" Version="5.0.3" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Molecules\" />
@@ -19,7 +18,13 @@
     <Folder Include="Sumps\" />
     <Folder Include="Core\" />
     <Folder Include="Transporters\" />
-    <Folder Include="Classifiers\" />
+    <Folder Include="Topology\" />
     <Folder Include="Presentation\" />
+    <Folder Include="MolecularAutomata\" />
+    <Folder Include="Models\" />
+    <Folder Include="ModelBuilder\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="MolecularAutomata\Package.cs" />
   </ItemGroup>
 </Project>

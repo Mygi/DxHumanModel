@@ -1,5 +1,5 @@
 ﻿using System;
-using DxHumanModel.Classifiers;
+using DxHumanModel.Topology;
 using Xunit;
 
 
@@ -15,7 +15,7 @@ namespace TestDxHuman.UnitTests.Classifiers
         [Fact]
         public void TestCoordinateCreation()
         {
-            Coordinate<int> corrd = new Coordinate<int>(5, 6, 7);
+            Coordinate corrd = new Coordinate(5, 6, 7);
             Assert.Equal(5, corrd.X);
             Assert.Equal(6, corrd.Y);
             Assert.Equal(7, corrd.Z);

@@ -9,10 +9,10 @@ namespace DxHumanModel.Transporters
 {
     public class Transporter
     {
-        private readonly ProbabilityMap H2O = new ProbabilityMap((double)0.2, (double)0.5);
-        private readonly ProbabilityMap Na = new ProbabilityMap((double)0.005, (double)0.005);
-        private readonly ProbabilityMap K = new ProbabilityMap((double)0.002, (double)0.001);
-        private readonly ProbabilityMap Other = new ProbabilityMap((double)0.2, (double)0.4);
+        private readonly ProbabilityMap H2O = new ProbabilityMap((decimal)0.2, (decimal)0.5);
+        private readonly ProbabilityMap Na = new ProbabilityMap((decimal)0.005, (decimal)0.005);
+        private readonly ProbabilityMap K = new ProbabilityMap((decimal)0.002, (decimal)0.001);
+        private readonly ProbabilityMap Other = new ProbabilityMap((decimal)0.2, (decimal)0.4);
 
         private int intervalsPerMeal;
         private ISubscriber sub;

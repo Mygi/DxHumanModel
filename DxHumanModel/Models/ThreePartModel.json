@@ -1,0 +1,43 @@
+﻿{
+  "modelName":  "Three Part Model",
+  "timeInterval":  "s",
+  "totalTicks":  1000,
+  "nodes": [
+      {
+          "nodeId":  1,
+          "spatialData": {
+              "baseShape":  "sphere", //sphere, cylinder, tubule (how do we describe enclosed tubules?
+              "resolution":  [1.0, 1.0, 1.0],
+              "dimensions":  [22.0, 22.0, 22.0],
+              "startingCoordinate":  [0, 0, 0]
+          },
+          "sievingCoefficients": {
+              "potassium":  0.97
+          },
+          "initialConcentrations":  {
+              "creatinine":  22.21
+          },
+          "generation":  {
+              "model":  "sinusoidal",
+              "hourlyRate":  1.01
+          }
+      }
+  ],
+  "elements": {
+      1: {
+            "canSend": "continuous",
+            "rateType":  "Linear",
+            "RateCoefficient":  1.9,
+            "neighbourId":  2
+          },
+      2: {
+        "canSend": "continuous",
+        "rateType": "Linear",
+        "RateCoefficient": 1.9,
+        "neighbourId": 1
+      }
+  },
+  "outputs": {
+
+  }
+}

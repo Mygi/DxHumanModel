@@ -1,5 +1,5 @@
 ﻿using System;
-namespace DxHumanModel.Classifiers
+namespace DxHumanModel.Inputs
 {
     public class Sleep
     {
